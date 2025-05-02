@@ -15,6 +15,7 @@
             <input type="password" name="password" required><br><br>
             <button type="submit">Submit</button>
         </form>
+        <p style="text-align:center;">Belum punya akun? <a href="register.php">Daftar di sini</a></p>
     </div>
 </body>
 </html>

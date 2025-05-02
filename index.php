@@ -1,0 +1,20 @@
+<?php include "config.php"; ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Login</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="proses_login.php" method="post">
+            <label>Username:</label><br>
+            <input type="text" name="username" required><br>
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -7,10 +7,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; */
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background: url('https://i.pinimg.com/1200x/52/d8/d1/52d8d1f436ee3cdca55fdc1a55937c3c.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: white;
+    color: rgba(255, 115, 0, 0.897);
     margin: 0;
     height: 100vh;
     display: flex;
@@ -23,6 +23,14 @@ header {
     padding: 20px 0;
     margin-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(255, 115, 0, 0.897);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 
@@ -94,7 +102,7 @@ button {
 
 a {
     margin-left: 10px;
-    color: #e06925;
+    color: #fff200;
     text-decoration: none;
 }
 

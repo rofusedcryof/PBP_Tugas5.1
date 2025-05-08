@@ -1,7 +1,15 @@
-/* Membuat seluruh halaman flex untuk center isi */
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif;
     background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: Arial, sans-serif;
+    background: url('https://i.pinimg.com/1200x/52/d8/d1/52d8d1f436ee3cdca55fdc1a55937c3c.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: white;
     margin: 0;
     height: 100vh;
@@ -10,12 +18,14 @@ body {
     align-items: center;
 }
 
-/* Header tetap */
 header {
     text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Foto profil */
+
 .foto {
     width: 180px;
     height: 180px;
@@ -25,20 +35,31 @@ header {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     margin-top: 20px;
-    animation: floatAnimation 3s infinite ease-in-out;
+    animation: floatAnimation 5s infinite ease-in-out;
     transition: transform 0.3s ease-in-out;
 }
 
-/* Kotak login */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
 .login-box {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(207, 10, 10, 0.388);
     padding: 53px;
     width: 300px;
     border-radius: 10px;
     text-align: left;
 }
 
-/* Input dan tombol */
 input, button {
     padding: 10px;
     margin: 5px 0;
@@ -49,45 +70,54 @@ input, button {
 }
 
 button {
-    background-color: #00bcd4;
+    background-color: #e06925;
     color: white;
     cursor: pointer;
 }
 
-/* Daftar to-do */
 .list {
     list-style: none;
     padding: 0;
 }
 
 .list li {
-    background: rgba(255,255,255,0.1);
+    background: rgba(145, 0, 0, 0.6);
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
 }
 
-/* Item selesai */
 .done {
     text-decoration: line-through;
     color: lightgray;
 }
 
-/* Link umum */
 a {
     margin-left: 10px;
-    color: #00e676;
+    color: #e06925;
     text-decoration: none;
 }
 
-/* Link hapus */
 a.hapus {
     color: red;
 }
 
-/* Tombol logout */
 .logout {
-    float: right;
+    padding: 12px 20px;
+    width: 200px;
+    border-radius: 10px;
     margin-right: 20px;
-    color: orange;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+    background-color: darkorange;
 }

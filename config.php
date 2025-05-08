@@ -2,7 +2,7 @@
 $host = "localhost";
 $username = "root";
 $db = "todo_app";
-$password = "12345678";
+$password = "";
 
 $conn = mysqli_connect($host, $username, $password, $db);
 if (mysqli_connect_error()) {

@@ -1,8 +1,8 @@
 <?php
-$host = "Localhost";
-$username = "Admin";
+$host = "localhost";
+$username = "root";
 $db = "todo_app";
-$password = "12345678";
+$password = "";
 
 $conn = mysqli_connect($host, $username, $password, $db);
 if (!$conn->connect_error) {

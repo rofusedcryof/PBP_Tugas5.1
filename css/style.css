@@ -1,14 +1,21 @@
+/* Membuat seluruh halaman flex untuk center isi */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #141e30, #243b55);
     color: white;
-    padding: 20px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Header tetap */
 header {
     text-align: center;
 }
 
+/* Foto profil */
 .foto {
     width: 180px;
     height: 180px;
@@ -22,20 +29,23 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Kotak login */
 .login-box {
-    background: rgba(0,0,0,0.6);
-    padding: 20px;
-    margin: auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 53px;
     width: 300px;
     border-radius: 10px;
+    text-align: left;
 }
 
+/* Input dan tombol */
 input, button {
     padding: 10px;
     margin: 5px 0;
     width: 100%;
     border-radius: 5px;
     border: none;
+    box-sizing: border-box;
 }
 
 button {
@@ -44,6 +54,7 @@ button {
     cursor: pointer;
 }
 
+/* Daftar to-do */
 .list {
     list-style: none;
     padding: 0;
@@ -56,21 +67,25 @@ button {
     border-radius: 5px;
 }
 
+/* Item selesai */
 .done {
     text-decoration: line-through;
     color: lightgray;
 }
 
+/* Link umum */
 a {
     margin-left: 10px;
     color: #00e676;
     text-decoration: none;
 }
 
+/* Link hapus */
 a.hapus {
     color: red;
 }
 
+/* Tombol logout */
 .logout {
     float: right;
     margin-right: 20px;

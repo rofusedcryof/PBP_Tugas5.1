@@ -1,11 +1,11 @@
 <?php
 $host = "localhost";
-$username = "root";
+$username = "Admin";
 $db = "todo_app";
-$password = "";
+$password = "12345678";
 
 $conn = mysqli_connect($host, $username, $password, $db);
-if (mysqli_connect_errno()) {
+if ($conn->connect_error) {
     die("Connection failed: " . mysqli_connect_error());
 }
 session_start();

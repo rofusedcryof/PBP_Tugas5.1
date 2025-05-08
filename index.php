@@ -10,9 +10,9 @@
         <h2>Login</h2>
         <form action="proses_login.php" method="post">
             <label>Username:</label><br>
-            <input type="text" name="username" required><br>
+            <input type="text" name="username" placeholder="Masukkan Username" required><br>
             <label>Password:</label><br>
-            <input type="password" name="password" required><br><br>
+            <input type="password" name="password" placeholder="Masukkan Password" required><br><br>
             <button type="submit">Submit</button>
         </form>
         <p style="text-align:center;">Belum punya akun? <a href="register.php">Daftar di sini</a></p>

@@ -6,12 +6,10 @@ redirectIfNotLoggedIn();
 $user_id = $_SESSION['user_id'];
 $username = $_SESSION['username'];
 
-// Konfigurasi paginasi
 $limit = 5;
 $page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
 $offset = ($page - 1) * $limit;
 
-// Ambil jumlah total tugas
 $count_stmt = $conn->prepare("SELECT COUNT(*) as total FROM todos WHERE user_id = ?");
 $count_stmt->bind_param("i", $user_id);
 $count_stmt->execute();
@@ -19,7 +17,6 @@ $total_result = $count_stmt->get_result()->fetch_assoc();
 $total_tasks = $total_result['total'];
 $total_pages = ceil($total_tasks / $limit);
 
-// Ambil tugas dengan limit dan offset
 $stmt = $conn->prepare("SELECT * FROM todos WHERE user_id = ? ORDER BY id DESC LIMIT ? OFFSET ?");
 $stmt->bind_param("iii", $user_id, $limit, $offset);
 $stmt->execute();
@@ -65,7 +62,6 @@ $todos = $stmt->get_result();
         <?php endwhile; ?>
     </ul>
 
-    <!-- Paginasi -->
     <?php if ($total_pages > 1): ?>
     <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center">

@@ -97,7 +97,7 @@ button {
 
 .done {
     text-decoration: line-through;
-    color: lightgray;
+    color: rgb(211, 211, 211);
 }
 
 a {
@@ -107,7 +107,7 @@ a {
 }
 
 a.hapus {
-    color: red;
+    color: rgb(0, 0, 0);
 }
 
 .logout {
@@ -128,4 +128,51 @@ a.hapus {
 
 .logout:hover {
     background-color: darkorange;
+}
+
+.btn-success {
+    background-color: #1bb700 !important;
+    border-color: #ffffff77 !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.btn-success:hover {
+    background-color: #15ff00 !important;
+    border-color: #2fff00 !important;
+}
+
+.btn-outline-success {
+    color: #fff200 !important;
+    border-color: #000000 !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #fff20089 !important;
+    color: white !important;
+}
+
+.btn-outline-danger {
+    border-color: #000000d7 !important;
+    color: #000000 !important;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ff00008c !important;
+    color: white !important;
+}
+
+.page-link {
+    color: #b30000 !important;
+}
+
+.page-item.active .page-link {
+    background-color: #b30000 !important;
+    border-color: #b30000 !important;
+    color: white !important;
+}
+
+.list-group-item {
+    background-color: rgba(255, 0, 0, 0.721);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }

@@ -1,6 +1,7 @@
 <?php
-include "config.php";
-include "functions.php";
+require_once "config.php";
+require_once "functions.php";
+
 redirectIfNotLoggedIn();
 $user_id = $_SESSION['user_id'];
 

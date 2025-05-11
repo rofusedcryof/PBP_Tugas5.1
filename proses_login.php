@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+require_once "config.php";
 
 $username = $_POST['username'];
 $password = hash('sha256', $_POST['password']);
